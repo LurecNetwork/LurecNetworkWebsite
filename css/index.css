@@ -5,6 +5,7 @@ body {
 .navbar {
   margin-top: 1%;
 }
+
 .navbar .container {
   border-radius: 10px;
   background-color: #ffffff;
@@ -12,21 +13,26 @@ body {
   padding-left: 5%;
   padding-right: 5%;
 }
+
 .navbar .container .navbar-brand {
   width: 10%;
 }
+
 .navbar .container .navbar-brand img {
   height: 56px;
 }
+
 .navbar .container .collapse .navbar-nav .nav-item a {
   font-weight: 600;
 }
+
 .navbar .container .navbar-toggler:focus,
 .navbar .container .navbar-toggler:active,
 .navbar .container .navbar-toggler-icon:focus {
   outline: none;
   box-shadow: none;
 }
+
 .navbar .container .disc .btn {
   background-color: #0b96ff;
   color: white;
@@ -36,6 +42,7 @@ body {
   border: 2px solid #0b96ff;
   transition: all 0.3s ease;
 }
+
 .navbar .container .disc .btn:hover {
   color: #0b96ff;
   background-color: transparent;
@@ -59,6 +66,7 @@ body {
   background-size: cover;
   position: relative;
 }
+
 .home .left {
   margin-left: 5%;
   margin-right: 5%;
@@ -68,15 +76,18 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+
 .home .left .heading {
   height: 128px;
 }
+
 .home .left .desc {
   color: #ffffff;
   font-size: 18px;
   color: rgb(255, 255, 255);
   font-weight: 600;
 }
+
 .home .left .connect {
   background-color: #f0f0f0;
   color: #333333;
@@ -90,10 +101,12 @@ body {
   padding-bottom: 10px;
   transition: all 0.3s ease;
 }
+
 .home .left .connect:hover {
   color: #f0f0f0;
   background-color: transparent;
 }
+
 .home .left .discord {
   background-color: #7289da;
   color: #ffffff;
@@ -107,10 +120,12 @@ body {
   padding-bottom: 10px;
   transition: all 0.3s ease;
 }
+
 .home .left .discord:hover {
   color: #f0f0f0;
   background-color: transparent;
 }
+
 .home .bg {
   position: absolute;
   top: 0;
@@ -127,19 +142,23 @@ body {
   .navbar .container .disc .btn {
     margin-bottom: 2%;
   }
+
   .home .left .desc {
     word-wrap: break-word;
   }
 }
+
 @media only screen and (max-width: 575px) {
   .navbar .container {
     margin-left: 1%;
     margin-right: 1%;
     width: 98%;
   }
+
   .navbar .container .disc .btn {
     margin-bottom: 2%;
   }
+
   .home {
     margin-left: 1%;
     margin-right: 1%;
@@ -147,6 +166,7 @@ body {
     background-image: url("../assets/images/bg-mb.png");
     background-size: cover;
   }
+
   .home .left {
     position: absolute;
     left: 50%;
@@ -157,13 +177,17 @@ body {
     width: 100%;
     margin: 0;
   }
+
   .home .left .desc {
     text-align: center;
   }
+
   .home .left a {
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
     width: 150px;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
