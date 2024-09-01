@@ -1,0 +1,87 @@
+body {
+  background-color: #f7f6fb;
+}
+
+.navbar {
+  margin-top: 1%;
+}
+.navbar .container {
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.navbar .container .navbar-brand {
+  width: 10%;
+}
+.navbar .container .navbar-brand img {
+  height: 56px;
+}
+.navbar .container .collapse .navbar-nav .nav-item a {
+  font-weight: 600;
+}
+.navbar .container .navbar-toggler:focus,
+.navbar .container .navbar-toggler:active,
+.navbar .container .navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar .container .disc .btn {
+  background-color: #0b96ff;
+  color: white;
+  font-weight: 600;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 2px solid #0b96ff;
+  transition: all 0.3s ease;
+}
+.navbar .container .disc .btn:hover {
+  color: #0b96ff;
+  background-color: transparent;
+}
+
+.tos {
+  margin-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 576px) {
+  .navbar .container .disc .btn {
+    margin-bottom: 2%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .navbar .container {
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 98%;
+  }
+  .navbar .container .disc .btn {
+    margin-bottom: 2%;
+  }
+  .tos {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 98%;
+    height: -moz-max-content;
+    height: max-content;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }
+}/*# sourceMappingURL=tos.css.map */
