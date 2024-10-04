@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.mainbox {
+  min-height: 100vh;
+  max-width: 100%;
+  position: relative;
+}
+.mainbox .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  opacity: 0.3;
+  background-color: #000;
+  z-index: 1;
+}
+.mainbox .banner {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  animation: bgAni 3s ease-out forwards;
+  -o-object-fit: cover;
+     object-fit: cover; /* Ensures the image covers the screen without distortion */
+  -o-object-position: center;
+     object-position: center;
+}
+@media screen and (max-width: 1200px) {
+  .mainbox .banner {
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+.mainbox .navbar {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  top: 0;
+  left: 0;
+  background-color: transparent !important;
+}
+.mainbox .navbar .container-fluid .navbar-brand {
+  width: 64px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.mainbox .navbar .container-fluid .collapse ul li a {
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+  transition: filter 0.3s;
+}
+.mainbox .navbar .container-fluid .collapse ul li a:hover {
+  filter: brightness(70%);
+}
+.mainbox .navbar .container-fluid .collapse ul li .store {
+  background: linear-gradient(to right, #fff 20%, #ff0 40%, #ff0 60%, #fff 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+.mainbox .navbar .container-fluid .navbar-toggler {
+  border-color: rgb(255, 255, 255);
+  outline: none;
+}
+.mainbox .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+  background-image: url("../assets/icons/list.svg");
+}
+.mainbox .navbar .container-fluid .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.mainbox .content {
+  z-index: 2;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: absolute;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainbox .content .logoBanner {
+  width: 244px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  animation: logoIn 3s ease-out forwards;
+}
+@keyframes logoIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.mainbox .content .desc {
+  color: white;
+  font-size: 18px;
+  animation: descIn 3s ease-out forwards;
+}
+@keyframes descIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.mainbox .content .buttons {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  animation: buttonIn 3s ease-out forwards;
+}
+.mainbox .content .buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 176px;
+  height: 54px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 900;
+  transition: all 0.5s ease;
+}
+.mainbox .content .buttons .connect {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  color: black;
+}
+.mainbox .content .buttons .connect:hover {
+  background-color: transparent;
+  color: white;
+}
+.mainbox .content .buttons .discord {
+  background-color: #7289da;
+  border: 2px solid #7289da;
+  color: white;
+}
+.mainbox .content .buttons .discord:hover {
+  background-color: transparent;
+}
+@keyframes buttonIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes bgAni {
+  from {
+    transform: scale(1.5);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+  to {
+    transform: scale(1.1);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+  }
+}/*# sourceMappingURL=index.css.map */
