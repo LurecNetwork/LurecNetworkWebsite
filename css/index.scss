@@ -66,7 +66,7 @@ body {
           li {
             a {
               color: white;
-              font-weight: 900;
+              font-weight: 900 !important;
               font-size: 18px;
               transition: filter 0.3s;
 
@@ -103,10 +103,17 @@ body {
       }
 
       .navbar-toggler {
-        border-color: rgb(255, 255, 255);
+        border: none;
         outline: none;
         .navbar-toggler-icon {
-          background-image: url('../assets/icons/list.svg');
+          transition: all 0.3s ease;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url("../assets/icons/list.svg");
+        }
+
+        .navbar-toggler-icon.open {
+          transform: rotate(180deg);
         }
 
         &:focus {
@@ -122,7 +129,7 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
     position: absolute;
-    width: 100%;
+    max-width: 100%;
     height: max-content;
     top: 50%;
     left: 50%;
@@ -212,6 +219,27 @@ body {
       to {
         transform: translateY(0px);
         opacity: 1;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 430px) {
+    .content {
+      .logoBanner {
+        width: 200px;
+      }
+
+      .desc {
+        font-size: 16px;
+      }
+
+      .buttons {
+        column-gap: 10px;
+        a {
+          width: 150px;
+          height: 54px;
+          font-size: 18px;
+        }
       }
     }
   }

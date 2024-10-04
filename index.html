@@ -84,10 +84,12 @@
         switch(el.id){
           case "inactive":
             el.id = "active";
+            el.classList.add('open');
             el.style.backgroundImage = "url('assets/icons/x-lg.svg')";
           break;
           case "active":
             el.id = "inactive";
+            el.classList.remove('open');
             el.style.backgroundImage = "url('assets/icons/list.svg')";
           break;
         }
