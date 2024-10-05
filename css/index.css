@@ -70,6 +70,14 @@ body {
 .mainbox .navbar .container-fluid .collapse ul li a:hover {
   filter: brightness(70%);
 }
+@media only screen and (max-width: 991px) {
+  .mainbox .navbar .container-fluid .collapse ul li a {
+    font-size: 16px;
+  }
+  .mainbox .navbar .container-fluid .collapse ul li .pc-mob {
+    display: none;
+  }
+}
 .mainbox .navbar .container-fluid .collapse ul li .store {
   background: linear-gradient(to right, #fff 20%, #ff0 40%, #ff0 60%, #fff 80%);
   background-size: 200% auto;
@@ -86,8 +94,41 @@ body {
   }
 }
 .mainbox .navbar .container-fluid .navbar-toggler {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  height: -moz-max-content;
+  height: max-content;
   border: none;
   outline: none;
+}
+.mainbox .navbar .container-fluid .navbar-toggler .mob-store {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .mainbox .navbar .container-fluid .navbar-toggler .mob-store {
+    display: block;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+  }
+  .mainbox .navbar .container-fluid .navbar-toggler .mob-store {
+    background: linear-gradient(to right, #fff 20%, #ff0 40%, #ff0 60%, #fff 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite;
+  }
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
 }
 .mainbox .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
   transition: all 0.3s ease;

@@ -75,6 +75,16 @@ body {
               }
             }
 
+            @media only screen and (max-width: 991px) {
+              a {
+                font-size: 16px;
+              }
+
+              .pc-mob {
+                display: none;
+              }
+            }
+
             .store {
               background: linear-gradient(
                 to right,
@@ -103,8 +113,50 @@ body {
       }
 
       .navbar-toggler {
+        width: max-content;
+        display: flex;
+        align-items: center;
+        height: max-content;
         border: none;
         outline: none;
+
+        .mob-store {
+          display: none;
+        }
+
+        @media only screen and (max-width: 991px){
+          .mob-store {
+            display: block;
+            font-weight: 900;
+            margin: 0;
+            padding: 0;
+            margin-right: 20px;
+          }
+          .mob-store {
+            background: linear-gradient(
+              to right,
+              #fff 20%,
+              #ff0 40%,
+              #ff0 60%,
+              #fff 80%
+            );
+            background-size: 200% auto;
+
+            color: #000;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            animation: shine 4s linear infinite;
+            @keyframes shine {
+              to {
+                background-position: 200% center;
+              }
+            }
+          }
+        }
+
         .navbar-toggler-icon {
           transition: all 0.3s ease;
           background-size: contain;
