@@ -1,3 +1,5 @@
+@import 'navbar';
+
 * {
   margin: 0;
   padding: 0;
@@ -40,139 +42,6 @@ body {
       height: 100vh;
       object-fit: cover;
       object-position: center;
-    }
-  }
-
-  .navbar {
-    z-index: 2;
-    position: absolute;
-    width: 100%;
-    height: max-content;
-    top: 0;
-    left: 0;
-    background-color: transparent !important;
-
-    .container-fluid {
-      .navbar-brand {
-        width: 64px;
-        user-select: none;
-        -moz-user-select: none;
-        -webkit-user-drag: none;
-        -webkit-user-select: none;
-      }
-
-      .collapse {
-        ul {
-          li {
-            a {
-              color: white;
-              font-weight: 900 !important;
-              font-size: 18px;
-              transition: filter 0.3s;
-
-              &:hover {
-                filter: brightness(70%);
-              }
-            }
-
-            @media only screen and (max-width: 991px) {
-              a {
-                font-size: 16px;
-              }
-
-              .pc-mob {
-                display: none;
-              }
-            }
-
-            .store {
-              background: linear-gradient(
-                to right,
-                #fff 20%,
-                #ff0 40%,
-                #ff0 60%,
-                #fff 80%
-              );
-              background-size: 200% auto;
-
-              color: #000;
-              background-clip: text;
-              text-fill-color: transparent;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-
-              animation: shine 4s linear infinite;
-              @keyframes shine {
-                to {
-                  background-position: 200% center;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .navbar-toggler {
-        width: max-content;
-        display: flex;
-        align-items: center;
-        height: max-content;
-        border: none;
-        outline: none;
-
-        .mob-store {
-          display: none;
-        }
-
-        @media only screen and (max-width: 991px){
-          .mob-store {
-            display: block;
-            font-weight: 900;
-            margin: 0;
-            padding: 0;
-            margin-right: 20px;
-          }
-          .mob-store {
-            background: linear-gradient(
-              to right,
-              #fff 20%,
-              #ff0 40%,
-              #ff0 60%,
-              #fff 80%
-            );
-            background-size: 200% auto;
-
-            color: #000;
-            background-clip: text;
-            text-fill-color: transparent;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-
-            animation: shine 4s linear infinite;
-            @keyframes shine {
-              to {
-                background-position: 200% center;
-              }
-            }
-          }
-        }
-
-        .navbar-toggler-icon {
-          transition: all 0.3s ease;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-image: url("../assets/icons/list.svg");
-        }
-
-        .navbar-toggler-icon.open {
-          transform: rotate(180deg);
-        }
-
-        &:focus {
-          outline: none;
-          box-shadow: none;
-        }
-      }
     }
   }
 
@@ -226,6 +95,7 @@ body {
     }
 
     .buttons {
+      margin-top: 10px;
       display: flex;
       column-gap: 20px;
       animation: buttonIn 3s ease-out forwards;
@@ -286,6 +156,7 @@ body {
       }
 
       .buttons {
+        margin-top: 10px;
         column-gap: 10px;
         a {
           width: 150px;
