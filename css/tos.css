@@ -59,7 +59,7 @@ body {
     font-weight: 900;
     background: linear-gradient(to right, #fff 20%, #ff0 40%, #ff0 60%, #fff 80%);
     background-size: 200% auto;
-    color: #000;
+    color: #fff;
     background-clip: text;
     text-fill-color: transparent;
     -webkit-background-clip: text;
